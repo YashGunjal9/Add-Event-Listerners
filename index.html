@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event Listerners</title>
+</head>
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 42px;
+        color: black;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+        width: 20%;
+        margin-bottom: 10px;
+        cursor: pointer;
+        background-color: gray;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background-color: orange;
+    }
+
+    div {
+        text-align: center;
+        background-color: yellow;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        font-size: 15px;
+        margin-bottom: 15px;
+        width: 300;
+        margin: 0;
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: 2px solid #d1d1d1;
+        border-radius: 8px;
+    }
+
+    .submit-btn {
+        width: auto;
+        padding: 10px 20px;
+        margin: 0;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <h1>Add Event Listerners</h1>
+
+        <button id="clickButton">Click Me</button>
+        <button id="doubleClickButton">Double click Me</button>
+        <div id="hoverDiv">Hover over me!</div>
+
+        <!-- Keyboard Events -->
+
+        <input type="text" id="keyInput" />
+
+        <!-- Form Events -->
+        <form id="myForm">
+            <input type="text" id="formInput" />
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
